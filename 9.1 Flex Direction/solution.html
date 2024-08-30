@@ -9,12 +9,15 @@
     .container {
       color: white;
       border: 5px solid gold;
-      display: inline-flex;
-      flex-direction: column;
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      flex-shrink: 1;
     }
 
     .container > * {
       flex-basis: 100px;
+      /* max-width: 1000px; */
     }
 
     .red {
