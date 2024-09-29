@@ -1,9 +1,9 @@
 import Hello from "./components/Hello";
-import Fruit from "./components/loop_through_fruits";
+import Fruits from "./components/Fruits";
 function App() {
   return (
     <div className="App">
-      <Fruit />
+      <Fruits />
     </div>
   );
 }
