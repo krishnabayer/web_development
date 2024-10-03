@@ -5,8 +5,8 @@ import ConditionalComponent from "./components/Conditional_component";
 function App() {
   return (
     <div className="App">
-      {/* <Fruits /> */}
-      <ConditionalComponent />
+      <Fruits />
+      {/* <ConditionalComponent /> */}
     </div>
   );
 }
