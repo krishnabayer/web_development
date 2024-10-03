@@ -1,17 +1,15 @@
+import Condition1 from "./Condition1";
+import Condition2 from "./condition2";
+
 export default function ConditionalComponent() {
-  const display = false;
-  if (display === false) {
-    return (
-      <div>
-        <h3>this is conditional component</h3>
-      </div>
-    );
-  } else {
-    return (
-      <div>
-        <h3>this is conditional component</h3>
-        <h3>code everyday</h3>
-      </div>
-    );
-  }
+  const display = true;
+  // if (display === true) {
+  //   return <Condition1 />;
+  // } else {
+  //   return <Condition2 />;
+  // }
+
+  let message;
+  display ? (message = <h1>hi1</h1>) : (message = <h1>hi2</h1>);
+  return message;
 }
