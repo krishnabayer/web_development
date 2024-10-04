@@ -4,12 +4,14 @@ export default function Form() {
   const [name, setname] = useState({ firstname: "", lastname: "" });
 
   return (
-    <div>
+    <form>
       <input
         type="text"
         value={name.firstname}
         onChange={(e) => setname({ ...name, firstname: e.target.value })}
       />
+      <br />
+      <br />
 
       <input
         type="text"
@@ -20,6 +22,8 @@ export default function Form() {
       <h3>
         your name is : {name.firstname} {name.lastname}
       </h3>
-    </div>
+
+      <button onClick={(e) => e.preventDefault()}>add</button>
+    </form>
   );
 }
