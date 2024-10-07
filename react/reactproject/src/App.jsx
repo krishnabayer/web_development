@@ -1,12 +1,14 @@
-import Hello from "./components/Hello";
-import Fruits from "./components/Fruits";
-import ConditionalComponent from "./components/Conditional_component";
-import Message from "./components/Message";
-import Counter from "./components/Counter";
-import Form from "./components/Form";
+// import Hello from "./components/Hello";
+// import Fruits from "./components/Fruits";
+// import ConditionalComponent from "./components/Conditional_component";
+// import Message from "./components/Message";
+// import Counter from "./components/Counter";
+// import Form from "./components/Form";
 import Todo from "./components/Todo";
-import Inlinecomponent from "./components/Inlinecomponent";
-import Outlinecomponent from "./components/Outlinecomponent";
+// import Inlinecomponent from "./components/Inlinecomponent";
+// import Outlinecomponent from "./components/Outlinecomponent";
+import Header from "./components/Header";
+import "./App.css";
 
 function App() {
   return (
@@ -16,9 +18,11 @@ function App() {
       {/* <Message /> */}
       {/* <Counter /> */}
       {/* <Form /> */}
-      {/* <Todo /> */}
-      <Inlinecomponent />
-      <Outlinecomponent />
+      {/* <Inlinecomponent />
+      <Outlinecomponent /> */}
+
+      <Header />
+      <Todo />
     </div>
   );
 }
