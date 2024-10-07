@@ -5,6 +5,8 @@ import Message from "./components/Message";
 import Counter from "./components/Counter";
 import Form from "./components/Form";
 import Todo from "./components/Todo";
+import Inlinecomponent from "./components/Inlinecomponent";
+import Outlinecomponent from "./components/Outlinecomponent";
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
       {/* <Message /> */}
       {/* <Counter /> */}
       {/* <Form /> */}
-      <Todo />
+      {/* <Todo /> */}
+      <Inlinecomponent />
+      <Outlinecomponent />
     </div>
   );
 }
