@@ -8,7 +8,7 @@ export default function Todo() {
   return (
     <div>
       <Todoform todos={todos} settodos={settodos} />
-      <Todolist todos={todos} />
+      <Todolist todos={todos} settodos={settodos} />
     </div>
   );
 }

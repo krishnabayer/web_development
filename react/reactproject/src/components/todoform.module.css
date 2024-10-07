@@ -7,3 +7,32 @@
   margin-top: 50px;
   box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
 }
+
+.moderninput {
+  border: none;
+  width: 100%;
+  display: block;
+  color: black;
+  font-size: 16px;
+  /* outline-color: none; */
+}
+
+.moderninput:focus {
+  outline: none;
+}
+
+.modernbutton {
+  display: inline-block;
+  border: none;
+
+  background-color: #f7ca18;
+  border-radius: 4px;
+  /* margin: auto;
+  margin-top: 50px; */
+  padding: 12px 20px;
+  color: white;
+  cursor: pointer;
+}
+.inputcontainer {
+  display: flex;
+}
