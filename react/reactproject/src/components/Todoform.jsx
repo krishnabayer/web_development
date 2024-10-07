@@ -1,4 +1,6 @@
 import { useState } from "react";
+import styles from "./todoform.module.css";
+
 export default function Todoform({ todos, settodos }) {
   const [todo, settodo] = useState("");
   function handlesubmit(e) {
@@ -7,7 +9,7 @@ export default function Todoform({ todos, settodos }) {
     settodo("");
   }
   return (
-    <form action="" onSubmit={handlesubmit}>
+    <form className={styles.todoform} action="" onSubmit={handlesubmit}>
       <input
         type="text"
         value={todo}
