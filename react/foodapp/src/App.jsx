@@ -1,11 +1,15 @@
 import { useState } from "react";
+import Search from "./components/Search.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [foodData, setfoodData] = useState([]);
 
   return (
-    <div>
-      <h1>hi</h1>
+    <div className="App">
+      <Search foodData={foodData} setfoodData={setfoodData} />
+      {foodData.map((food) => (
+        <li>{food.title}</li>
+      ))}
     </div>
   );
 }
