@@ -1,3 +1,3 @@
 # WEB development
 
-## All exercise from Web dev bootcamp course - Angel Yu (Udemy)
+A collection of code snippets from my journey learning HTML, CSS, JavaScript, and React.
