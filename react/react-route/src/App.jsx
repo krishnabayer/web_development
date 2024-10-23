@@ -7,6 +7,7 @@ import Dashboard from "./pages/Dashboard";
 import Nav from "./Nav";
 import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";
+import Products from "./pages/Products";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="/products/:id" element={<Products />} />
         <Route path="/dashboard" element={<Dashboard />}>
           <Route path="profile" element={<Profile />} />
           <Route path="settings" element={<Settings />} />
