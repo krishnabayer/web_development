@@ -4,8 +4,15 @@ export default function Dashboard() {
   return (
     <div>
       <h1>Dashboard</h1>
-      <Link to="profile">Profile</Link>
-      <Link to="settings">Settings</Link>
+      <ul>
+        <li>
+          <Link to="profile">Profile</Link>
+        </li>
+        <li>
+          <Link to="settings">Settings</Link>
+        </li>
+      </ul>
+
       <Outlet />
     </div>
   );
