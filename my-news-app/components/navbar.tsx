@@ -23,7 +23,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <header>
-      <nav className="fixed w-full h-12 shadow-md bg-white z-50">
+      <nav className="fixed w-full h-12 shadow-md bg-black text-white z-50">
         <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
           <Link href="/">
             <h1 className="font-bold">SCIPI-AI</h1>
