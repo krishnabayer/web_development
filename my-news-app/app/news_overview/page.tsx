@@ -51,7 +51,7 @@ export default function Home() {
               <CardTitle>{news_examples[i]["title"]}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>{news_examples[i]["abstract_content"].substring(0, 1000)}</p>
+              <p>{news_examples[i]["abstract_content"].substring(0, 500)}</p>
             </CardContent>
             <CardFooter>
               <p>Article Link</p>
@@ -64,7 +64,7 @@ export default function Home() {
 
   return (
     <div className="pt-16 min-h-screen bg-gray-100 flex flex-col items-center">
-      <div className="container mx-auto p-4">
+      <div className="container mx-auto p-8">
         <Carousel className="w-full max-w-xs">
           <CarouselContent>{itemElements}</CarouselContent>
           <CarouselPrevious />
@@ -74,31 +74,3 @@ export default function Home() {
     </div>
   );
 }
-
-// {
-/* <Card>
-  <CardContent className="flex flex-col aspect-square items-center justify-center p-6">
-    <h1 className="font-bold" key={i + "_title"}>
-      {news_examples[i]["title"]}
-    </h1>
-    <br />
-    <p key={i + "_abstract_content"}>
-      {news_examples[i]["abstract_content"].substring(0, 300)}
-    </p>
-  </CardContent>
-</Card>; */
-// }
-
-// {
-/* <Card>
-  <CardHeader>
-    <CardTitle>{news_examples[i]["title"]}e</CardTitle>
-  </CardHeader>
-  <CardContent>
-    <p>{news_examples[i]["abstract_content"].substring(0, 300)}</p>
-  </CardContent>
-  <CardFooter>
-    <p>Article Link</p>
-  </CardFooter>
-</Card>; */
-// }
