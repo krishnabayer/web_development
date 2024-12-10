@@ -14,6 +14,16 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+import {
+  Sidebar,
+  SidebarInset,
+  SidebarProvider,
+  SidebarContent,
+  SidebarFooter,
+  SidebarGroup,
+  SidebarHeader,
+} from "@/components/ui/sidebar";
+
 export default function Home() {
   const news_examples = [
     {
@@ -61,16 +71,50 @@ export default function Home() {
       </CarouselItem>
     );
   }
-
   return (
-    <div className="pt-16 min-h-screen bg-gray-100 flex flex-col items-center">
-      <div className="container mx-auto p-8">
-        <Carousel className="w-full max-w-xs">
-          <CarouselContent>{itemElements}</CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
-      </div>
+    // <div className="p-10  flex">
+    <div className="flex flex-col items-center">
+      <SidebarProvider>
+        <Sidebar>
+          <SidebarHeader className="pt-14">Custom filter</SidebarHeader>
+          <SidebarContent>
+            <SidebarGroup />
+            <SidebarGroup />
+          </SidebarContent>
+          <SidebarFooter>footer here</SidebarFooter>
+        </Sidebar>
+        <SidebarInset className="py-1 px-2">
+          <p>news item</p>
+        </SidebarInset>
+      </SidebarProvider>
     </div>
+    // </div>
   );
+
+  // return (
+  //   <div className="pt-16 min-h-screen bg-gray-100 flex flex-col items-center">
+  //     <div>
+  //       <SidebarProvider>
+  //         <Sidebar>
+  //           <SidebarHeader className="pt-16"> Header here</SidebarHeader>
+  //           <SidebarContent>
+  //             <SidebarGroup />
+  //             <SidebarGroup />
+  //           </SidebarContent>
+  //           <SidebarFooter> footer here</SidebarFooter>
+  //         </Sidebar>
+  //       </SidebarProvider>
+  //     </div>
+
+  //     {/* <div className="pt-16 min-h-screen bg-gray-100 flex flex-col items-center"> */}
+  //     <div className="container mx-auto p-8">
+  //       <Carousel className="w-full max-w-xs">
+  //         <CarouselContent>{itemElements}</CarouselContent>
+  //         <CarouselPrevious />
+  //         <CarouselNext />
+  //       </Carousel>
+  //     </div>
+  //     {/* </div> */}
+  //   </div>
+  // );
 }
